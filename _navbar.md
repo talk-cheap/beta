@@ -1,6 +1,6 @@
 - [DevOps 知识库](https://devops.phodal.com/home)
-- [DevOps 工具](beta/docs/links.md)
-- [GitHub](https://github.com/talk-cheap)
+- [DevOps 工具](docs/devops-tools.md)
+- [跟到 GitHub](https://github.com/talk-cheap)
 - [切换主题](?)
 <ul>
 <li><a href="?theme=dark">深空黑</a></li>
