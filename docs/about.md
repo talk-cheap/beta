@@ -11,8 +11,8 @@ from random import choice
 
 
 def who_we_are():
-    print("Hi, how are you？")    
-    
+    print("Hi, how are you？")
+
     # life is a random number between 0 and today
     today = datetime.now().today().strftime('%Y%m%d')
     life = choice(range(0, int(today)))
@@ -27,6 +27,6 @@ def who_we_are():
     home = 'https://{}.github.io/'
     believe = 'talk-cheap'
     me = int(life) + 1
-    
+
     return home.format(believe) + str(me) + 'you'
 ```
