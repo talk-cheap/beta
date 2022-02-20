@@ -1,6 +1,6 @@
 ## 工具类
 
-> [生成漂亮的代码片段](https://carbon.now.sh)
+> [Docsify - 代码即文档](https://docsify.js.org/)
 >
 > [生成 Github 用的各种徽章](http://shields.io/#your-badge)
 >
@@ -8,7 +8,7 @@
 
 ## 博客类
 
-> [Practice](https://tobyqin.cn/)
+> [Toby 的个人博客](https://tobyqin.cn/)
 >
 
 
