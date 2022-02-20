@@ -16,7 +16,7 @@
 
 - 经验总结
 
-  - [我们踩过的坑](docs/what-we-learnt.md)
+  - [我们踩过的坑](docs/lesson-learnt.md)
 
 - 其他文档
 
