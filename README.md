@@ -1,9 +1,6 @@
 # beta
 
-![](https://img.shields.io/badge/project-beta-blue)
-![](https://img.shields.io/badge/build-passing-brightgreen)
-![](https://img.shields.io/badge/vulnerabilities-0-brightgreen)
-![](https://img.shields.io/badge/version-0.0.1-blue)
+![](https://img.shields.io/badge/project-beta-orange) ![](https://img.shields.io/badge/build-passing-brightgreen) ![](https://img.shields.io/badge/vulnerabilities-0-brightgreen) ![](https://img.shields.io/badge/version-0.0.1-blue) ![](https://img.shields.io/badge/license-MIT-blue)
 
 > DevOps is not a goal, but a never-ending process of **continuous improvement**. 
 >
@@ -29,6 +26,13 @@
 
 ## 设计理念
 
+本项目主要围绕着[DevOps的CAMS 理念模型](https://www.linkedin.com/learning/devops-foundations/devops-core-values-cams-2)实现：
+
+1. **Culture 文化：**文化包括理念讲解和宣传，包括此文档，我们都在向所有DevOps从业者传递有价值的信息，DevOps不仅仅是流程和工作的改进，更是从开发和运维的意识转变，以全局优化的角度去优化软件交付流和改善研发体验。
+2. **Automation 自动化：**自动化是DevOps中重要的组成部分，我们应该尽可能地将交付过程中的工作自动化掉，在本项目中我们提供了自动化基础设施，自动化配置，自动化编译部署，自动化测试和监控等方面的实践。
+3. **Measurement 度量：**合理地管理和改进我们的系统的关键之一就是我们有测量它们的能力。除此之外我们还需要让开发团队感知DevOps工作的价值。不过指标的设计和选择需要十分谨慎，一旦对团队构成压迫将可能带来不良后果。
+4. **Sharing 分享：**在DevOps推进中，开放和透明性是合作的核心。知识共享是持续反馈和改进过程中一个重要的点，有了更多更好的分享，DevOps才能做的更好，企业才能不断发展壮大。
+
 # 项目架构
 
 ## 核心组件
@@ -45,12 +49,12 @@
 
 本项目成员名单如下：
 
-| 成员             | 简介                                             | 开源/博客         |
-| ---------------- | ------------------------------------------------ | ----------------- |
-| **Toby Qin**     | 资深 DevOps 工程师，喜欢和人沟通，学习和分享技术 | tobyqin@github    |
-| **Shimin Wang**  | 全栈工程师，喜欢捣鼓工具和新鲜的东西             | sirius0301@github |
-| **Thyme Chen**   | 测试开发工程师，擅长Python和数据分析             | nowu@github       |
-| **Xiaokang Han** | 运维工程师，擅长Kubernetes和服务器运维和构建     |                   |
+| 成员         | 简介                                                 | 开源/博客         |
+| ------------ | ---------------------------------------------------- | ----------------- |
+| Toby Qin     | 资深 DevOps 工程师，喜欢和人沟通，擅长学习和分享技术 | tobyqin@github    |
+| Shimin Wang  | 全栈工程师，喜欢捣鼓工具和新鲜的东西                 | sirius0301@github |
+| Thyme Chen   | 测试开发工程师，擅长Python和数据分析                 | nowu@github       |
+| Xiaokang Han | 运维工程师，擅长Kubernetes和Linux服务器运维和构建    |                   |
 
 最后，感谢你的阅读。
 
