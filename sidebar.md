@@ -1,4 +1,4 @@
-- Kubernetes
+- 项目文档
 
   - [Beta 项目实践](README.md)
   - [Beta 落地过程](docs/beta-project.md)
