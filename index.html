@@ -39,7 +39,7 @@
       mergeNavbar: true,
       maxLevel: 2,
       subMaxLevel: 1,
-      name: 'Toby\'s Dogs',
+      name: 'Project Beta',
       search: {
         noData: {
           '/de-de/': 'Keine Ergebnisse!',
@@ -56,7 +56,7 @@
       plugins: [
         function (hook, vm) {
           hook.beforeEach(function (html) {
-            url = 'https://github.com/tobyqin/docs/blob/master/' + vm.route.file;
+            url = 'https://github.com/talk-cheap/beta/blob/main/' + vm.route.file;
             var editHtml = '[:memo: Edit Document](' + url + ')\n\n'
             return editHtml +
               html
