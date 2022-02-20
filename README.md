@@ -1,5 +1,10 @@
 # beta
 
+![](https://img.shields.io/badge/project-beta-blue)
+![](https://img.shields.io/badge/build-passing-brightgreen)
+![](https://img.shields.io/badge/vulnerabilities-0-brightgreen)
+![](https://img.shields.io/badge/version-0.0.1-blue)
+
 一个 DevOps 流水线演示项目，用于展示企业级软件交付自动化场景，提供端到端交付设计思路。本项目源于工作经验提炼和抽象，也借鉴了互联网提供的资源，欢迎大家提供反馈和指导意见。
 
 更好的阅读体验请点击：https://talk-cheap.github.io/beta/
