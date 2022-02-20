@@ -22,7 +22,7 @@ servicecomb:
     version: 0.0.1
 
     registry:
-      address: svc-service-center:30100
+      address: http://bmi-service-center:30100
   rest:
     address: 0.0.0.0:8889
 
@@ -48,4 +48,4 @@ servicecomb:
 
 # This is web root for windows server, change this path according to where you put your source code
 gateway:
-  webroot: D:/practice/servicecomb-samples/java-chassis-samples/bmi/webapp/src/main/resources/static
+  webroot: ./src/main/resources/static
