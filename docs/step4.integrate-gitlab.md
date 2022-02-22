@@ -4,7 +4,7 @@
 ![Lighthouse_4c8g](./images/tencent-lighthouse-4c8g.png)
 
 
-# 安装 Gitlab-ce
+# 一. 安装 Gitlab-ce
 
 ## 1. 安装依赖项
 ```shell
@@ -95,11 +95,53 @@ Notify.test_email('deliver to', 'gitlab 邮箱测试', '邮件
 
 ![Test Gitlab Email](./images/configre_email.png)
 
-
-Notify.test_email('test email', 'gitlab 邮箱测试', '邮件正文').deliver_now 
-
 ## 6. 参考资料
 
 - [Ubuntu 20.04安装配置GitLab](https://blog.csdn.net/qq_35844177/article/details/106876923)
 - [GitLab服务器修改管理员用户root密码](https://blog.csdn.net/w544924116/article/details/118876468)
 - [记一次gitlab添加用户收不到邮件的解决办法](https://cloud.tencent.com/developer/article/1111933)
+
+# 二. 安装与配置 Gitlab-Runner
+
+Gitlab-Runner 安装环境：
+![Lighthouse_4c8g](./images/tencent-lighthouse-2c4g.png)
+## 1. 安装 Gitlab-Runner
+
+首先信任Gitlab的GPG公钥：
+
+```shell
+curl https://packages.gitlab.com/gpg.key 2> /dev/null | sudo apt-key add - &>/dev/null
+```
+
+其次，配置清华大学开源镜像站，将如下内容写进 `/etc/apt/sources.list.d/gitlab-runner.list`
+
+```shell
+deb https://mirrors.tuna.tsinghua.edu.cn/gitlab-runner/ubuntu bionic main
+```
+
+最后安装 `gitlab-runner`
+
+```shell
+sudo apt-get update
+sudo apt-get install gitlab-runner
+```
+
+## 2. 配置 Gitlab-Runner
+
+首先注册 Gitlab-Runner
+
+```shell
+sudo gitlab-runner register
+```
+
+![register gitlab-runner](./images/gitlab-runner-register.png)
+
+其次，重启 Gitlab-Runner
+
+```shell
+sudo systemctl restart gitlab-runner
+```
+## 3. 参考文档
+
+- [One-line registration command](https://docs.gitlab.com/runner/register/)
+- [Gitlab Runner 镜像使用帮助](https://mirrors.tuna.tsinghua.edu.cn/help/gitlab-runner/)
