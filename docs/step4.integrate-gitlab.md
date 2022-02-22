@@ -67,6 +67,12 @@ sudo vim /etc/gitlab/gitlab.rb
   90 # gitlab_rails['smtp_pool'] = false
 ```
 
+重载配置
+
+```shell
+sudo gitlab-ctl reconfigure
+```
+
 **配置个人QQ邮箱作为Gitlab邮箱，请参照如下文档**
 [记一次gitlab添加用户收不到邮件的解决办法](https://cloud.tencent.com/developer/article/1111933)
 
@@ -145,3 +151,4 @@ sudo systemctl restart gitlab-runner
 
 - [One-line registration command](https://docs.gitlab.com/runner/register/)
 - [Gitlab Runner 镜像使用帮助](https://mirrors.tuna.tsinghua.edu.cn/help/gitlab-runner/)
+
