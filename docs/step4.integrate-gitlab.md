@@ -1,45 +1,11 @@
-?> We will walk through to build and run a simple docker image in this task.
+?> Gitlab 是 CICD 的核心系统，提供了源代码版本控制和持续交付相关的所有功能。
 
-Source code: https://github.com/tobyqin/hello-docker
+Gitlab 本身提供了良好的文档供我们参考，在和其他系统集成时，我们可以参考这些文档。
 
-![](./../images/hello-cat.png)
+- https://docs.gitlab.com/ee/integration/
 
-## Dockerfile
+在本项目中我们将 Gitlab 集成了以下系统：
 
-```Dockerfile
-FROM frolvlad/alpine-python3:latest
-
-WORKDIR /app
-COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
-COPY . .
-ENV FLASK_APP='app'
-
-# customization
-ENV NAME='Toby Qin'
-ENV SITE='https://tobyqin.cn'
-ENV MESSAGE='Kitty'
-ENV IMAGE=''
-
-EXPOSE 5000
-CMD [ "python3", "app.py"]
-```
-
-## Commands
-
-```bash
-git clone https://github.com/tobyqin/hello-docker.git
-
-cd hello-docker
-
-# build Dockerfile, please change username in the command
-docker build -t tobyqin/hello:latest .
-
-# run it
-docker run -it --rm -p 5000:5000 tobyqin/hello
-
-# publish to docker hub
-docker login
-docker push tobyqin/hello
-```
-
+1. Slack：用于通知 CICD 信息
+2. Jira： 用于同步需求交付状态
+3. Email: 用于邮件通知 CICD 信息
