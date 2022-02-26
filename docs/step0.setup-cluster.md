@@ -4,11 +4,11 @@
 
 ## 实施步骤
 
-Prepare node (virtual/bare metal machine)
-Create project folder where the resulting files will be stored
-Create Terraform resources in main.tf
-Initialize Terraform, validate and apply configuration
-Get Kubernetes Dashboard token and login
+1. Prepare node (virtual/bare metal machine)
+2. Create project folder where the resulting files will be stored
+3. Create Terraform resources in main.tf
+4. Initialize Terraform, validate and apply configuration
+5. Get Kubernetes Dashboard token and login
 
 ## 操作命令
 
@@ -35,7 +35,7 @@ resource "local_file" "kube_cluster_yaml" {
   sensitive_content  = "${rke_cluster.cluster.kube_config_yaml}"
 }
 
-# init 
+# init
 $ terraform init
 ...
 * provider.local: version = "~> 1.2"
@@ -43,7 +43,7 @@ $ terraform init
 ...
 Terraform has been successfully initialized!
 
-# validate 
+# validate
 $ terraform validate
 $ terraform plan
 Refreshing Terraform state in-memory prior to plan...
@@ -59,7 +59,7 @@ Terraform will perform the following actions:
       ...
 
 
-## apply 
+## apply
 $ terraform apply
 ...
 rke_cluster.cluster: Creation complete after 3m11s (ID: node1.brotandgames.com)
@@ -68,7 +68,7 @@ local_file.kube_cluster_yaml: Creation complete after 0s (ID: 4bd2da6f5c62317e16
 
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 
-# check 
+# check
 $ ls
 kube_config_cluster.yml    main.tf            terraform.tfstate
 
