@@ -20,7 +20,7 @@
 
 本项目大约历时 4 个月，利用大家工作之余的时间断断续续完成。就完成度来说，坦白讲并没有那么优秀，不过项目的规划图还是可以供其他同学参考。
 
-![roadmap](docs/images/image-20220220152907206.png)
+![roadmap](docs/docs/images/image-20220220152907206.png)
 
 前期的头脑风暴和知识总结我们主要使用思维导图来完成，实际工作中 xmind 也是我们使用非常频繁的工具之一，强烈推荐。
 
@@ -38,7 +38,7 @@
 
 ## 项目架构
 
-![overview](docs/images/image-20220220173741876.png)
+![overview](docs/docs/images/image-20220220173741876.png)
 
 项目架构依据设计理念分为 3 个层次，分别是：
 
@@ -48,7 +48,7 @@
 
 以下为本项目目录结构。
 
-![project-structure](docs/images/image-20220220192255165.png)
+![project-structure](docs/docs/images/image-20220220192255165.png)
 
 ## 核心组件
 
@@ -117,25 +117,49 @@
 
 #### 使用 Slack 提出用户需求
 
+![image-20220226173031861](docs/images/image-20220226173031861.png)
+
 #### 在 Jira 中使用 Backlog 和看板管理需求
+
+![image-20220226173116492](docs/images/image-20220226173116492.png)
+
+![image-20220226173222429](docs/images/image-20220226173222429.png)
 
 #### 在 Jira 中新建功能分支，开始功能开发
 
+![image-20220226173400923](docs/images/image-20220226173400923.png)
+
 #### 在 IDE 完成代码后，提交代码到 Gitlab
+
+![image-20220226173816699](docs/images/image-20220226173816699.png)
 
 #### 自动触发 CICD 流水线，功能经过编译测试扫描后部署到 **测试环境**
 
+![image-20220226173754192](docs/images/image-20220226173754192.png)
+
 #### 开发人员使用 MR 发起合并代码请求，Code Review 后合并代码到主分支
+
+![image-20220226173859612](docs/images/image-20220226173859612.png)
 
 #### 自动触发 CICD 流水线， 功能再次编译测试扫描后部署到 **生产环境**
 
-#### 检查 Jira 变更历史，需求进度已经自动同步并且自动更新到 Slack
+待补充。
+
+#### 检查 Jira 变更历史，需求进度已经自动同步 Jira 并通知到 Slack
+
+![image-20220226173526433](docs/images/image-20220226173526433.png)
 
 #### 功能上线后关闭 Jira 需求
 
+![image-20220226173659741](docs/images/image-20220226173659741.png)
+
 #### 线上日志检查演示 - ELK
 
+待补充。
+
 #### 线上链路追踪演示 - AppDynamic
+
+待补充。
 
 ## 经验教训
 
