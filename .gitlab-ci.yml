@@ -40,13 +40,13 @@ Integration Test:
     - echo "unit test finished"
 
 SonarQube Scan:
-  stage: scan
+  stage: test
   script:
     - echo "command to run sonar scan"
     - echo "scan completed"
 
 Security Scan:
-  stage: scan
+  stage: test
   script:
     - echo "command to run sonar scan"
     - echo "scan completed"
