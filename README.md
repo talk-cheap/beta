@@ -20,7 +20,7 @@
 
 本项目大约历时 4 个月，利用大家工作之余的时间断断续续完成。就完成度来说，坦白讲并没有那么优秀，不过项目的规划图还是可以供其他同学参考。
 
-![roadmap](docs/docs/images/image-20220220152907206.png)
+![roadmap](docs/images/image-20220220152907206.png)
 
 前期的头脑风暴和知识总结我们主要使用思维导图来完成，实际工作中 xmind 也是我们使用非常频繁的工具之一，强烈推荐。
 
@@ -38,7 +38,7 @@
 
 ## 项目架构
 
-![overview](docs/docs/images/image-20220220173741876.png)
+![overview](docs/images/image-20220220173741876.png)
 
 项目架构依据设计理念分为 3 个层次，分别是：
 
@@ -48,7 +48,7 @@
 
 以下为本项目目录结构。
 
-![project-structure](docs/docs/images/image-20220220192255165.png)
+![project-structure](docs/images/image-20220220192255165.png)
 
 ## 核心组件
 
