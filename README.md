@@ -149,7 +149,7 @@
 
 #### 自动触发 CICD 流水线， 功能再次编译测试扫描后部署到 **生产环境**
 
-待补充。
+![](docs/images/pipeline-main-prod.png)
 
 #### 检查 Jira 变更历史，需求进度已经自动同步 Jira 并通知到 Slack
 
