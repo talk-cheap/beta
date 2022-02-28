@@ -20,31 +20,35 @@ after_script:
 Build Artifacts:
   stage: build
   script:
-    - echo "Do your build here"
+    - echo "command to build artifacts"
 
 Build Images:
   stage: build
   script:
-    - echo "Do your build here"
+    - echo "command to build docker images"
 
 Unit Test:
   stage: test
   script:
-    - echo "Do a test here"
-    - echo "For example run a test suite"
+    - echo "command to run unit tests"
+    - echo "unit test completed"
 
 Integration Test:
   stage: test
   script:
-    - echo "Do another parallel test here"
-    - echo "For example run a lint test"
+    - echo "command to run integration tests"
+    - echo "unit test finished"
 
-# stages:
-#   - test
-# sast:
-#   stage: test
-# include:
-#   - template: Security/SAST.gitlab-ci.yml
+SonarQube Scan:
+  stage: scan
+  script:
+    - echo "command to run sonar scan"
+    - echo "scan completed"
+
+Security Scan:
+  stage: scan
+include:
+  - template: Security/SAST.gitlab-ci.yml
 
 Deploy Dev:
   stage: deploy
