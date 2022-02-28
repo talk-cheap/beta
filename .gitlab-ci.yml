@@ -49,4 +49,20 @@ Integration Test:
 Deploy Dev:
   stage: deploy
   script:
-    - echo "Do your deploy here"
+    - echo "Deploy to Dev environment"
+  rules:
+    - if: $CI_COMMIT_BRANCH != "main" && $CI_COMMIT_BRANCH != "uat"
+
+Deploy UAT:
+  stage: deploy
+  script:
+    - echo "Deploy to UAT environment"
+  rules:
+    - if: $CI_COMMIT_BRANCH == "uat"
+
+Deploy PROD:
+  stage: deploy
+  script:
+    - echo "Deploy to PROD environment"
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
