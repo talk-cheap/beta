@@ -11,6 +11,7 @@
 stages:
   - build
   - scan
+  - containerize
   - deploy
   - test
 
@@ -26,11 +27,6 @@ Build Artifacts:
   stage: build
   script:
     - echo "command to build artifacts"
-
-Build Images:
-  stage: build
-  script:
-    - echo "command to build docker images"
 
 Unit Test:
   stage: build
@@ -49,6 +45,11 @@ Security Scan:
   script:
     - echo "command to run sonar scan"
     - echo "scan completed"
+
+Build Images:
+  stage: containerize
+  script:
+    - echo "command to build docker images"
 
 Deploy Dev:
   stage: deploy
