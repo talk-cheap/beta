@@ -16,4 +16,5 @@ jira: contains a set of config to locate jira test cycle
 email_to:
 email_cc:
 log_attach: attached the execution log
+
 ```
