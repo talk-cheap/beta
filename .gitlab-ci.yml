@@ -47,8 +47,9 @@ SonarQube Scan:
 
 Security Scan:
   stage: scan
-include:
-  - template: Security/SAST.gitlab-ci.yml
+  script:
+    - echo "command to run sonar scan"
+    - echo "scan completed"
 
 Deploy Dev:
   stage: deploy
