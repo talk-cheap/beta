@@ -10,9 +10,9 @@
 
 stages:
   - build
-  - test
   - scan
   - deploy
+  - test
 
 before_script:
   - echo "Before script section"
