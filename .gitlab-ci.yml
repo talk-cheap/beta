@@ -33,16 +33,10 @@ Build Images:
     - echo "command to build docker images"
 
 Unit Test:
-  stage: test
+  stage: build
   script:
     - echo "command to run unit tests"
     - echo "unit test completed"
-
-Integration Test:
-  stage: test
-  script:
-    - echo "command to run integration tests"
-    - echo "unit test finished"
 
 SonarQube Scan:
   stage: scan
@@ -76,3 +70,15 @@ Deploy PROD:
     - echo "Deploy to PROD environment"
   rules:
     - if: $CI_COMMIT_BRANCH == "main"
+
+Integration Test:
+  stage: test
+  script:
+    - echo "command to run integration tests"
+    - echo "unit test finished"
+
+Performance Test:
+  stage: test
+  script:
+    - echo "command to run performance tests"
+    - echo "unit test finished"
