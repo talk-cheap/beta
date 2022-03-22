@@ -1,74 +1,20 @@
-?> In this task we will run a job in k8s.
+# All tests triggered by an API
+![img.png](images/integration-test.png)
+Tests scripts are separated projects which were built as an image 
 
-## Manifest
+## Test Type:
+![img.png](images/test-type.png)
 
-A one time job can be coded like this:
-
-```yaml
-# job.yaml
-apiVersion: batch/v1
-kind: Job
-metadata:
-  name: pi
-spec:
-  template:
-    spec:
-      containers:
-        - name: pi
-          image: perl
-          command: ['perl', '-Mbignum=bpi', '-wle', 'print bpi(2000)']
-      restartPolicy: Never
-  backoffLimit: 4
-```
-
-Create the job.
-
-```bash
-k create -f job.yaml
-```
-
-Inspect the job result.
+## API configurations
 
 ```
-$ k logs pi-22fd7
-3.14159265358979323846264338327950288...
-```
+test_name: used to locate the image
+pass-rate expectation: for example, the pass-rate reaches 80%, we may mark it as PASS
+dashboard: contains a set of config to locate target dashboard
+update to dashboard config
+jira: contains a set of config to locate jira test cycle
+email_to:
+email_cc:
+log_attach: attached the execution log
 
-However, we usually want to perform the job regularly, based on a schedule.
-
-```yaml
-# job-cron.yaml
-apiVersion: batch/v1beta1
-kind: CronJob
-metadata:
-  name: hello
-spec:
-  schedule: '*/1 * * * *'
-  jobTemplate:
-    spec:
-      template:
-        spec:
-          containers:
-            - name: hello
-              image: busybox
-              imagePullPolicy: IfNotPresent
-              command:
-                - /bin/sh
-                - -c
-                - date; echo Hello from the Kubernetes cluster
-          restartPolicy: OnFailure
-```
-
-## Command
-
-```bash
-k create -f job-cron.yaml
-k get cj
-k get jobs
-```
-
-## Shortcut
-
-```
-kubectl create cronjob hello --image=busybox  --schedule="*/1 * * * *" -- echo "Hello World"
 ```
